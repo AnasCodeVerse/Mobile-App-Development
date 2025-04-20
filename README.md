@@ -11,7 +11,7 @@ Each lab journal is stored in a separate file and contains the code, explanation
 
 | Journal No. | Title / Topic       | File Name               |
 |-------------|---------------------|-------------------------|
-| 1           | Journal 1]          | `Lab1.md`               |
+| 1           | Journal 1]          | `lab1.docx`             |
 | 2           | Journal 2]          | `Lab2.md`               |
 | 3           | Journal 3]          | `Lab3.md`               |
 | 4           | Journal 4]          | `Lab4.md`               |
