@@ -1,9 +1,6 @@
 
 
----
-
-````markdown
-# 📘 Lab 4 – Custom Widgets and Navigation in Flutter
+# 📘 Lab 3 – Creating Simple Flutter Application
 
 **Course:** Mobile Application Development Lab (CSL-341)  
 **Student Name:** Muhammad Anas  
@@ -13,40 +10,47 @@
 
 ---
 
-## 🎯 Objective
-To design different screens of a Flutter application using custom widgets and implement navigation between them.
+## 🎯 Objectives:
+- Creating simple Flutter applications using Visual Studio Code.
 
----
-
-## 🛠️ Tools Used
+## 🛠️ Tools Used:
 - Visual Studio Code (VS Code)
-- Dart & Flutter SDK
 
 ---
 
-## ✅ Task: Create a Multi-Screen Flutter App
+## ✅ Task 1: App with Basic UI
 
-### 🔹 Requirements:
-1. Create multiple screens using separate Dart files.
-2. Add buttons to navigate between screens.
-3. Use custom widgets to make the UI reusable.
-4. On one screen, show an image.
-5. On another screen, build a form with validation.
+### Requirements:
+- Background color: White
+- AppBar with blueAccent background color
+- AppBar title in white color
 
 ---
 
-## 🔹 Main Code Files
+## ✅ Task 2: Self Introduction in the App
+
+### Requirements:
+- One paragraph introducing yourself
+- Your name should be **bold**
+- Your qualities should be *italic*
+- Paragraph must be **centered on the screen**
 
 ---
 
-### 📄 `main.dart`
+## ✅ Task 3: Add a Star Icon
+
+### Requirements:
+- Add a yellow star icon below the paragraph
+
+---
+
+## 🔹 Complete Flutter Code:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -56,16 +60,67 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Lab 4 Flutter App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        backgroundColor: Colors.white, // Background color white
+        appBar: AppBar(
+          title: Text(
+            'Introduction App',
+            style: TextStyle(color: Colors.white), // Title in white color
+          ),
+          backgroundColor: Colors.blueAccent, // AppBar background color
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Introduction Paragraph
+              Padding(
+                padding: EdgeInsets.all(16.0),
+                child: RichText(
+                  textAlign: TextAlign.center,
+                  text: TextSpan(
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                    children: [
+                      TextSpan(text: "My name is "),
+                      TextSpan(
+                        text: "Muhammad Anas",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(text: ", a Computer Science student at "),
+                      TextSpan(
+                        text: "Bahria University",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text:
+                            ". I am passionate about coding, problem-solving, and leadership.\n\n",
+                      ),
+                      TextSpan(text: "In my free time, I enjoy "),
+                      TextSpan(
+                        text:
+                            "learning new technologies and applying them in real-world projects",
+                        style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              // Star Icon
+              Icon(
+                Icons.star,
+                size: 40,
+                color: Colors.yellow,
+              ),
+            ],
+          ),
+        ),
       ),
-      home: const HomeScreen(),
     );
   }
 }
-````
-
 ---
 
 ### 📄 `home_screen.dart`
