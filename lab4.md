@@ -1,7 +1,11 @@
-```markdown
+
+
+---
+
+````markdown
 # 📘 Lab 4 – Custom Widgets and Navigation in Flutter
 
-**Course:** Mobile Application Development Lab  
+**Course:** Mobile Application Development Lab (CSL-341)  
 **Student Name:** Muhammad Anas  
 **Enrollment No.:** 01-134222-089  
 **Class & Section:** BSCS-6B  
@@ -10,25 +14,32 @@
 ---
 
 ## 🎯 Objective
-
-To design different screens of a Flutter application using **custom widgets** and implement **navigation** between them.
+To design different screens of a Flutter application using custom widgets and implement navigation between them.
 
 ---
 
 ## 🛠️ Tools Used
-
-- IDE: Visual Studio Code  
-- Language: Dart (Flutter Framework)
-
----
-
-## ✅ Tasks Overview
-
-### ✔️ Task: Create a Multi-Screen Flutter App with Custom Widgets and Navigation
+- Visual Studio Code (VS Code)
+- Dart & Flutter SDK
 
 ---
 
-## 🧾 Main Entry Point (`main.dart`)
+## ✅ Task: Create a Multi-Screen Flutter App
+
+### 🔹 Requirements:
+1. Create multiple screens using separate Dart files.
+2. Add buttons to navigate between screens.
+3. Use custom widgets to make the UI reusable.
+4. On one screen, show an image.
+5. On another screen, build a form with validation.
+
+---
+
+## 🔹 Main Code Files
+
+---
+
+### 📄 `main.dart`
 
 ```dart
 import 'package:flutter/material.dart';
@@ -53,11 +64,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-```
+````
 
 ---
 
-## 🏠 Home Screen (`home_screen.dart`)
+### 📄 `home_screen.dart`
 
 ```dart
 import 'package:flutter/material.dart';
@@ -122,7 +133,7 @@ class CustomButton extends StatelessWidget {
 
 ---
 
-## 📺 Screen 1 (`screen1.dart`)
+### 📄 `screen1.dart`
 
 ```dart
 import 'package:flutter/material.dart';
@@ -159,7 +170,7 @@ class Screen1 extends StatelessWidget {
 
 ---
 
-## 📝 Screen 2 (`screen2.dart`) - With Form Validation
+### 📄 `screen2.dart` (With Form)
 
 ```dart
 import 'package:flutter/material.dart';
@@ -235,12 +246,21 @@ class _Screen2State extends State<Screen2> {
 
 ---
 
-## 🏁 Conclusion
+## ✅ Output
 
-- The application was successfully implemented using Flutter and Dart.  
-- Custom widgets were used to simplify code reuse.  
-- Navigation between screens was implemented using `Navigator.push()`.  
-- Form validation was applied on user inputs in **Screen 2**.
+* ✅ Home screen with two buttons for navigation
+* ✅ Screen 1 displays a bold welcome text and a nature image
+* ✅ Screen 2 shows a form with fields for name and email, along with validation and success message
 
 ---
+
+## 📌 Conclusion
+
+* Built a Flutter app with multiple screens
+* Implemented custom reusable widgets
+* Used `Navigator.push()` to navigate between screens
+* Added form with validation using `TextFormField`
+
+---
+
 
