@@ -19,7 +19,7 @@ Each lab journal is stored in a separate file and contains the code, explanation
 | 6           | Journal 6          | `Lab6.md`               |
 | 7           | Journal 7          | `Lab7.md`               |
 | 8           | Journal 8          | `Lab8.md`               |
-| 9           | Journal 6          | `Lab6.md`               |
-| 10          | Journal 7          | `Lab7.md`               |
+| 9           | Journal 9          | `Lab6.md`               |
+| 10          | Journal 10          | `Lab7.md`               |
 | Lab Final   | Lab Final          | `MyNotes.zip`           |
 
